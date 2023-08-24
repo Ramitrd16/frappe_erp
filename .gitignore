@@ -1,34 +1,57 @@
-# Frappe Bench-specific files and directories
-/sites/*
-/sites/common_site_config.json
-/sites/apps.txt
-/sites/assets/
-/sites/*/public
-/sites/*/assets/
-/sites/*/private/
-/sites/*/files/
-/sites/*/logs/
-/sites/*/backup/
-/env/
-*.sql
-
-# Logs
-/logs/*
-
-# Redis Dump
-*.rdb
-
-# Python compiled files
+# Ignore compiled code and dependencies
+*.pyc
 __pycache__/
+*.class
+target/
+*.jar
+node_modules/
+vendor/
 
-# Local configuration
-config/local/
+# Ignore logs and debug files
+*.log
+*.log.*
+*.debug
 
-# Editor/IDE specific files
+# Ignore database files
+*.sqlite
+*.db
+*.sqlite3
+
+# Ignore IDE and editor-specific files
 .vscode/
 .idea/
-*.swp
-*~
+.sublime-project
+.sublime-workspace
+*.sublime-workspace
+*.iml
 
-# Do not exclude the apps folder and its contents
+# Ignore cache files
+.cache/
+.caches/
+.cache-*
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore generated documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+build/
+output/
+*.pdf
+*.html
+*.epub
+
+# Ignore generated configuration files
+*.conf.tmp
+
+# Ignore session and cookie files
+sessions/
+cookies/
+
+# Ignore compiled binaries and executables
+bin/
+out/
 
