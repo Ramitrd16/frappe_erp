@@ -1,0 +1,34 @@
+# Frappe Bench-specific files and directories
+/sites/*
+/sites/common_site_config.json
+/sites/apps.txt
+/sites/assets/
+/sites/*/public
+/sites/*/assets/
+/sites/*/private/
+/sites/*/files/
+/sites/*/logs/
+/sites/*/backup/
+/env/
+*.sql
+
+# Logs
+/logs/*
+
+# Redis Dump
+*.rdb
+
+# Python compiled files
+__pycache__/
+
+# Local configuration
+config/local/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Do not exclude the apps folder and its contents
+
